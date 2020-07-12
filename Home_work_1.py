@@ -4,8 +4,8 @@ import collections
 pattern = '.*/[0-9]{8}'
 prog = re.compile(pattern)
 new_list = []
-with open('URLs.txt', 'r') as str:
-    for line in str:
+with open('URLs.txt', 'r') as strig:
+    for line in strig:
         line = line.strip()
         if prog.match(line):
             line = line.split('/')
